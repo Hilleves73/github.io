@@ -1,0 +1,104 @@
+/* Estilo Global */
+body {
+    font-family: 'Georgia', serif; /* Fuente clásica para un estilo tradicional */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #011627); /* Fondo degradado oscuro */
+    color: #f5f5f5; /* Texto claro para contraste */
+    line-height: 1.6; /* Mejor legibilidad */
+}
+
+/* Encabezado */
+header {
+    background-color: #001f3f; /* Azul oscuro */
+    color: #ffcc00; /* Amarillo dorado */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem; /* Título principal grande */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f5f5f5;
+}
+
+/* Contenedor Principal */
+main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leyenda-container {
+    display: flex; /* Flexbox para organizar imagen y texto */
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ajusta contenido al contenedor */
+    max-width: 900px; /* Ancho máximo */
+    margin: 20px auto;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Sombra */
+}
+
+.leyenda-img {
+    width: 300px; /* Ancho fijo para la imagen */
+    height: auto; /* Mantiene proporción */
+    margin: 0; /* Sin margen */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+    border-right: 3px solid #ffcc00; /* Línea decorativa */
+}
+
+.leyenda-text {
+    padding: 20px;
+    text-align: justify;
+}
+
+.leyenda-text p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.carousel-images img {
+    width: 300px; /* Ancho fijo para todas las imágenes */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente si no tiene la misma proporción */
+}
+
+/* Pie de Página */
+footer {
+    background-color: #001f3f;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
