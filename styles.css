@@ -82,11 +82,6 @@ main {
     font-size: 1.1rem;
     margin: 0;
 }
-.carousel-images img {
-    width: 300px; /* Ancho fijo para todas las imágenes */
-    height: 200px; /* Altura fija para todas las imágenes */
-    object-fit: cover; /* Asegura que la imagen se recorte correctamente si no tiene la misma proporción */
-}
 
 /* Pie de Página */
 footer {
@@ -101,4 +96,64 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+}
+
+/* Media Queries para hacerlo Responsivo */
+
+/* Pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .leyenda-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .leyenda-img {
+        width: 100%; /* La imagen ocupa todo el ancho */
+        border-right: none; /* Eliminar borde en móviles */
+        margin-bottom: 15px; /* Espacio entre imagen y texto */
+    }
+
+    .leyenda-text {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .leyenda-container {
+        max-width: 90%;
+    }
+
+    .leyenda-img {
+        width: 250px; /* Imagen un poco más pequeña */
+    }
+
+    .leyenda-text p {
+        font-size: 1rem;
+    }
 }
