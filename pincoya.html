@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Pincoya</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es', // Cambia esto al idioma predeterminado de tu página
+                includedLanguages: 'en,es,fr,de,it', // Idiomas que deseas incluir
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -22,12 +32,13 @@
         </nav>
     </header>
     <main>
+        <div id="google_translate_element"></div> <!-- Mueve esto aquí para que esté visible -->
         <div class="leyenda-container">
-        <img src="pincoya.jpg" alt="La Pincoya" class="leyenda-img">
-        <div class="leyenda-text">
-        <p>La Pincoya es un ser mitológico de la isla de Chiloé, descrita como una mujer de extraordinaria belleza, con cabello dorado y vestimenta hecha de algas marinas. Ella es el espíritu del mar y la fertilidad marina. Según la leyenda, la Pincoya aparece en la costa y realiza una danza misteriosa. Si baila mirando hacia el océano, será señal de que habrá abundancia de pesca en la región. Sin embargo, si danza mirando hacia la tierra, los pescadores enfrentarán épocas de escasez. Se dice que, para invocar su favor, los chilotes cuidan el mar y sus tradiciones. La Pincoya simboliza la conexión entre la naturaleza y los habitantes de Chiloé. </p>
+            <img src="pincoya.jpg" alt="La Pincoya" class="leyenda-img">
+            <div class="leyenda-text">
+                <p>La Pincoya es un ser mitológico de la isla de Chiloé, descrita como una mujer de extraordinaria belleza, con cabello dorado y vestimenta hecha de algas marinas. Ella es el espíritu del mar y la fertilidad marina. Según la leyenda, la Pincoya aparece en la costa y realiza una danza misteriosa. Si baila mirando hacia el océano, será señal de que habrá abundancia de pesca en la región. Sin embargo, si danza mirando hacia la tierra, los pescadores enfrentarán épocas de escasez. Se dice que, para invocar su favor, los chilotes cuidan el mar y sus tradiciones. La Pincoya simboliza la conexión entre la naturaleza y los habitantes de Chiloé.</p>
+            </div>
         </div>
-    </div>
     </main>
     <footer>
         <p>© 2024 Leyendas</p>
